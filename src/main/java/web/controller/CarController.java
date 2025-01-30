@@ -16,7 +16,6 @@ import java.util.List;
 public class CarController {
 
     @GetMapping(value = "/cars")
-
     public String showCars(ModelMap model, @RequestParam(name = "count", required = false, defaultValue = "5") int count) {
             CarService carService = new CarServiceImpl();
             carService.addCar(new Car("Toyota", 2020, 150.00));
@@ -26,11 +25,10 @@ public class CarController {
             carService.addCar(new Car("Mersedes", 2023, 360.15));
             carService.addCar(new Car("UAZ", 2010, 100.00));
 
-        if (count < 0 || count >= 5) {
-            model.addAttribute("cars", carService.showCars(5));
-        } else {
-            model.addAttribute("cars", carService.showCars(count));
-        }
+            if (count <=0 ) {
+                model.addAttribute("cars", carService.showCars(5));
+            }
+            else {model.addAttribute("cars", carService.showCars(count));}
         return "cars";
     }
 
