@@ -11,6 +11,12 @@ public class Car {
         return model;
     }
 
+    public Car(String model, int year, double price) {
+        this.model = model;
+        this.year = year;
+        this.price = price;
+    }
+
     public void setModel(String model) {
         this.model = model;
     }

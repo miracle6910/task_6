@@ -2,11 +2,23 @@ package web.service;
 
 import web.model.Car;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CarServiceImpl implements CarService {
+    private List<Car> cars = new ArrayList<>();
+
+    @Override
+    public void addCar(Car car) {
+        cars.add(car);
+
+    }
+
     @Override
     public List<Car> showCars(int count) {
-        return null;
+        return cars.stream()
+                .limit(count >= 5 ? cars.size() : count)
+                .toList();
     }
 }
+
