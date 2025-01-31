@@ -18,8 +18,8 @@ public class CarController {
 
     }
     @GetMapping(value = "/cars")
-    public String GetCarsByCount(ModelMap model, @RequestParam(value = "count", required = false, defaultValue = "5") int count) {
-        model.addAttribute("cars", carService.GetCarsByCount(count));
+    public String GetCarsByCount(ModelMap model, @RequestParam(value = "count", required = false) Integer count) {
+        model.addAttribute("cars", carService.GetCarsByCount(count !=null ? count : 5));
         return "cars";
     }
 
