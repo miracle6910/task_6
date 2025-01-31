@@ -16,7 +16,7 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public List<Car> GetCarsByCount(int count) {
+    public List<Car> getCarsByCount(Integer count) {
         List<Car> cars = carDao.listOfCars();
         return cars.stream()
                 .limit((count >= 5 || count <= 0) ? cars.size() : count)
