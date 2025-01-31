@@ -1,3 +1,9 @@
-F:\java\PP_2_2_2_spring-mvc1\src\main\java\web\controller\HelloController.java
-F:\java\PP_2_2_2_spring-mvc1\src\main\java\web\config\WebConfig.java
-F:\java\PP_2_2_2_spring-mvc1\src\main\java\web\config\AppInit.java
+F:\java\task_6\src\main\java\web\controller\CarController.java
+F:\java\task_6\src\main\java\web\service\CarServiceImpl.java
+F:\java\task_6\src\main\java\web\model\Car.java
+F:\java\task_6\src\main\java\web\service\CarService.java
+F:\java\task_6\src\main\java\web\config\AppInit.java
+F:\java\task_6\src\main\java\web\controller\HelloController.java
+F:\java\task_6\src\main\java\web\config\WebConfig.java
+F:\java\task_6\src\main\java\web\dao\CarDaoImpl.java
+F:\java\task_6\src\main\java\web\dao\CarDao.java
