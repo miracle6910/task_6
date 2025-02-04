@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
   <component name="FacetManager">
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <setting name="provider-name" value="Hibernate" />
+        <datasource-mapping>
+          <factory-entry name="entityManagerFactory" value="ca590e02-3490-4c50-ae83-db3b89585d82" />
+        </datasource-mapping>
+        <naming-strategy-map />
+      </configuration>
+    </facet>
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="HiberConfig" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/web/config/HiberConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/web/config/WebConfig.java</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
 </module>
